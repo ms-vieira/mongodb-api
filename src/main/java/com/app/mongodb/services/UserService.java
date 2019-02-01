@@ -43,6 +43,21 @@ public class UserService implements Serializable {
         repo.deleteById(id);
     }
 
+    //Copia os dados do obj para o newobj
+    private void updateData(User newObj, User obj) {
+        newObj.setName(obj.getName());
+        newObj.setEmail(obj.getEmail());
+    }
+
+    //Para atualizar user
+    public User update (User obj) {
+        //Buscando no bd o objeto a ser atualizado
+        User newObj = findById(obj.getId());
+        //Copia os dados do obj para o newobj
+        updateData(newObj, obj);
+        return repo.save(newObj);
+    }
+
     //Pega um DTO e instancia um user
     public User fromDTO(UserDTO objDto) {
         return new User(objDto.getId(), objDto.getName(), objDto.getEmail());
