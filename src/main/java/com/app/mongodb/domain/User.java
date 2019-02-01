@@ -5,6 +5,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.io.Serializable;
 
+//Entidade na qual irá receber os dados no banco de dados.
 @Document
 public class User implements Serializable {
 

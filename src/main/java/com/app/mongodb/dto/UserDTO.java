@@ -4,6 +4,11 @@ import com.app.mongodb.domain.User;
 
 import java.io.Serializable;
 
+/*
+    DTO (Data Transfer Object): é um objeto que tem o papel
+    de carregar dados das entidades de forma simples.
+*/
+
 public class UserDTO implements Serializable {
 
     private static final long serialVersionUID = 1L;

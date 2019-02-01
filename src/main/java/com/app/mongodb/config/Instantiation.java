@@ -10,6 +10,7 @@ import java.util.Arrays;
 
 import static java.util.Arrays.asList;
 
+// Clase utilizada para dar uma carga e instanciar os objtos no mongodb
 @Configuration
 public class Instantiation implements CommandLineRunner {
 
