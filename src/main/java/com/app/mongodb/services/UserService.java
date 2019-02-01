@@ -36,10 +36,15 @@ public class UserService implements Serializable {
         return repo.insert(obj);
     }
 
+    //Deletar um user
+    public void delete(String id) {
+        //Procura o id, caso não encontre já retorna a exceção
+        findById(id);
+        repo.deleteById(id);
+    }
+
     //Pega um DTO e instancia um user
     public User fromDTO(UserDTO objDto) {
         return new User(objDto.getId(), objDto.getName(), objDto.getEmail());
     }
-
-
 }
