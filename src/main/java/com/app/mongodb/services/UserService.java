@@ -1,6 +1,7 @@
 package com.app.mongodb.services;
 
 import com.app.mongodb.domain.User;
+import com.app.mongodb.dto.UserDTO;
 import com.app.mongodb.repository.UserRepository;
 import com.app.mongodb.services.exception.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,12 +20,26 @@ public class UserService implements Serializable {
     @Autowired
     private UserRepository repo;
 
+    //Buscar todos os users
     public List<User> findAll() {
         return repo.findAll();
     }
 
+    //Buscar user especifíco
     public User findById(String id) {
         Optional<User> obj = repo.findById(id);
         return obj.orElseThrow(() -> new ObjectNotFoundException("Objeto não encontrado"));
     }
+
+    //Inserir user
+    public User insert(User obj) {
+        return repo.insert(obj);
+    }
+
+    //Pega um DTO e instancia um user
+    public User fromDTO(UserDTO objDto) {
+        return new User(objDto.getId(), objDto.getName(), objDto.getEmail());
+    }
+
+
 }
