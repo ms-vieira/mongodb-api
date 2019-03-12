@@ -1,7 +1,7 @@
 # app-mongodb-persistence
 Implementações de CRUD, associações entre objetos, referências e consultas com Spring Data e MongoRepository.
 
-Repositório do projeto: ->https://github.com/msvieiraweb/app-mongodb-persistence
+Repositório do projeto: ->https://github.com/msvieiraweb/app-mongodb
 
 ### Instruções para execução do projeto
 - Clonar repositório.
