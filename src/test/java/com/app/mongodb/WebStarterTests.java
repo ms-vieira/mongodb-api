@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class AppMongodbPersistenceApplicationTests {
+public class WebStarterTests {
 
 	@Test
 	public void contextLoads() {

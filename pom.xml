@@ -6,12 +6,12 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.1.2.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/>
 	</parent>
 	<groupId>com.app</groupId>
-	<artifactId>app-mongodb-persistence</artifactId>
+	<artifactId>mongodb-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>app-mongodb-persistence</name>
+	<name>mongodb-api</name>
 	<description>Implementações de CRUD, associações entre objetos, referências e consultas com Spring Data e MongoRepository. </description>
 
 	<properties>

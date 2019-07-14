@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AppMongodbPersistenceApplication {
+public class WebStarter {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AppMongodbPersistenceApplication.class, args);
+		SpringApplication.run(WebStarter.class, args);
 	}
 
 }
